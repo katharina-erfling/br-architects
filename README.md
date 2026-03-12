@@ -19,7 +19,7 @@ Eine responsive Architektur-Portfolio-Website, erstellt mit Bootstrap 5 und SCSS
 
 - Responsives Layout (Mobile, Tablet, Desktop)
 - Sticky Navigation mit Schatten beim Scrollen
-- Vollbreites Hero-Bild mit dunklem Overlay
+- Vollbreites Hero-Bild
 - Projekt-Bildergrid mit Hover-Zoom-Effekt
 - Team-Bereich mit Kontakt-Buttons
 - Kontaktformular im minimalistischen Unterstrich-Stil
