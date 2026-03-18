@@ -1,0 +1,62 @@
+// colors
+$primary:  #d46b4d;
+$secondary: #f4d8cd;
+
+$light: #f1f2f2;
+$danger: #8c0839;
+$success: #426907;
+
+// font-families
+$font-family-base:'poiret_oneregular';
+$headings-font-family:  'monotonregular';
+
+//forms btn
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1rem;
+
+// buttons links
+$btn-border-radius: 0;
+$nav-link-color:  $primary;
+$navbar-light-color: $primary;
+$nav-tabs-link-active-color: $primary;
+$navbar-dark-active-color: $primary;
+$navbar-light-active-color: $danger;
+
+// forms
+$input-bg: transparent;
+$input-border-color:   transparent;
+$input-border-width:   0;
+$input-border-radius: 0;
+
+//hr
+$hr-color:   $secondary;
+$hr-opacity: 1;
+
+// border
+//$border-style: dashed;
+$border-color: $success;
+$border-width: 2px;
+
+// carousel
+$carousel-indicator-width: 20px;
+$carousel-indicator-height: 20px;
+$carousel-control-prev-icon-bg: url("../../img/PREV.webp");
+$carousel-control-next-icon-bg: url("../../img/NEXT.webp");
+$carousel-indicator-active-bg:       $primary;
+
+$carousel-caption-spacer:            3.5rem;
+$carousel-control-icon-width:        4rem;
+
+//spacing
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4.5,
+    7: $spacer * 6,
+    8: $spacer * 8,
+);

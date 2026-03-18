@@ -1,0 +1,345 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 300;
+}
+
+.navbar-brand,
+.people-name,
+.contact-btn {
+    font-weight: 600;
+}
+
+
+
+/*-----------------*/
+/*- Nav - */
+/*-----------------*/
+
+.navbar {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: box-shadow 0.3s ease;
+
+    .container-fluid {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+
+    .navbar-brand {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .nav-link {
+        font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    }
+}
+
+
+
+
+
+
+.hero {
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+    img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        display: block;
+
+        @media (max-width: 576px) {
+            height: 50vw;
+        }
+    }
+}
+
+.hero-title {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    white-space: nowrap;
+}
+
+
+
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // Fallback: wenn JS nicht läuft
+    @media (prefers-reduced-motion: reduce) {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+/*-----------------*/
+/*- Projects - */
+/*-----------------*/
+
+.projects-section {
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.projects-title {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #555;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.projects-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.04);
+}
+
+.project-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: clamp(0.6rem, 1.2vw, 0.7rem);
+    color: #fff;
+    background: #2a2a2a;
+    padding: 4px 10px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+/*-----------------*/
+/*- About - */
+/*-----------------*/
+
+.about-section {
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.about-text {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: #888;
+    line-height: 1.8;
+    max-width: 100%;
+}
+
+/*-----------------*/
+/*- People - */
+/*-----------------*/
+
+.people-section {
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.people-card {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.people-info {
+    padding: 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.people-name {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.15rem;
+}
+
+.people-role {
+    font-size: clamp(0.68rem, 1.2vw, 0.72rem);
+    color: #888;
+    margin-bottom: 0.75rem;
+}
+
+.people-text {
+    font-size: clamp(0.78rem, 1.5vw, 1rem);
+    color: #888;
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.people-contact {
+    display: block;
+    text-align: center;
+    font-size: clamp(0.72rem, 1.2vw, 0.78rem);
+    color: #333;
+    background: #f0f0f0;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: #e0e0e0;
+    }
+}
+
+/*-----------------*/
+/*- Contact - */
+/*-----------------*/
+
+.contact-section {
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.contact-title {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+    font-size: clamp(0.75rem, 1.5vw, 0.8rem);
+    color: #888;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.6rem 0;
+    margin-bottom: 1.25rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.8rem);
+    color: #555;
+    background: transparent;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+        color: #aaa;
+    }
+
+    &:focus {
+        border-bottom-color: #555;
+    }
+}
+
+.contact-btn {
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    padding: 0.65rem 2rem;
+    font-size: clamp(0.7rem, 1.2vw, 0.75rem);
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: #444;
+    }
+}
+
+/*-----------------*/
+/*- Map - */
+/*-----------------*/
+
+.map-section {
+    img {
+        display: block;
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+
+        @media (max-width: 576px) {
+            max-height: 250px;
+        }
+    }
+}
+
+/*-----------------*/
+/*- Footer - */
+/*-----------------*/
+
+.site-footer {
+    background: #2a2a2a;
+    padding: 1.25rem 0;
+}
+
+.footer-brand {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.footer-text {
+    font-size: clamp(0.7rem, 1.5vw, 0.78rem);
+    color: #aaa;
+    margin: 0;
+}
+
+.footer-link {
+    color: #6ea8d8;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-icon {
+    color: #aaa;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: #fff;
+    }
+}

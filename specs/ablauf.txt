@@ -1,0 +1,20 @@
+Vorbereitung
+
+Projektstruktur in VSC anlegen
+alle vorhandenen Dateien integrieren, incl BS
+HTML Grundstruktur für HTML(´s) anlegen
+SCSS Datei(en) anlegen, verknüpfen, Fonts integrieren
+Welche Variablen soll es geben? Var SCSS anlegen/setzen/überschreiben
+
+
+Index HTML - Notizen und Gedanken zu folgenden Themen
+
+Welche CSS Eigenschaften benötigen wir?
+Wie verhält sich das Layout responsiv?
+Mobile First!
+Wie soll die HTML Struktur daraufhin aussehen?
+Umsetzung Index HTML & CSS
+parallel HTML mit den dazugehörigen Klassen aufbauen, auch direkt responsiv 
+welche BS elemente sollen verwendet werden? soll ein template verwendet werden?
+mit dem Live Server und dem Inspector überprüfen bis das gewünschte Ergebnis erreicht wurde
+HTML sowie CSS validieren
